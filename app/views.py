@@ -44,7 +44,7 @@ def Previous_Trainees(request):
 def PEmpdetails(request):
     return render(request, 'Trainer_Previous_Empdetails.html')
 
-def Attendance(request):
+def PAttendance(request):
     return render(request, 'Trainer_Previous_Attendance.html')
 
 def Ptask1(request):

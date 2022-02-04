@@ -1,12 +1,21 @@
 {%extends 'index.html'%}
 {% load static %}
 {% block content %}
+<div class="row" style="padding-top:50px; ">
+  <div class="col-sm-2"></div>
+  <div class="col-sm-10" class="pull-right" >
 
-<div class="col-md-12 grid-margin stretch-card">
-    <div class="card">
-      <div class="card-body">
-        <h4 class="card-title">Attendance</h4>
-        {% comment %} <p class="card-description"> Horizontal form layout </p> {% endcomment %}
+
+
+<div class="col-md-10 grid-margin stretch-card">
+    <div class="card" >
+      <div class="card-body" style="height:450px;padding-top:30px; ">
+        <br>
+        <center>
+        <h3 class="card-title">Attendance</h3>
+        </center>
+      <br><br>
+       
         <form class="forms-sample" action="PList">
           
           <div class="form-group row">
@@ -20,21 +29,27 @@
             <div class="col-sm-9">
                 <input type="Date" class="form-control" id="exampleInputEnddate" >
             </div>
-          </div>
+          </div><br><br>
+          
+        
           <div class="row">
-            <div class="col-sm-5"></div>
-            <div class="col-sm-7" class="pull-right" >
+              <center>
               <button type="Submit" class="btn btn-outline-success btn-icon-text">
-                Submit
-            </button>
+                <i class="mdi mdi-file-check btn-icon-prepend"></i> Submit </button>
+              </center>
             </div>
           </div>
-          
-          
-        </form>
+        </form>  
+        </div>
+      
       </div>
     </div>
   </div>
+
+
+
+</div>
+</div>
 
 
 {%endblock%}
