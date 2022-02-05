@@ -139,7 +139,7 @@
   </div>
 
 <!--Chart start-->
-  <div class="content-wrapper">
+  
     <div class="page-header">
         <h3 class="page-title"> Chart </h3>
         
@@ -162,54 +162,59 @@
         </div>
     </div>
     </div>
-</div>
+
 
 <!--End Chart Html-->
-<div class="row"  style="padding-top:20px;">
-  <div class="col-sm-6 grid-margin">
-    <div class="card" style="height: 280px">
-    <a href="Attendance" style="text-decoration: none;">
-      <div class="card-body">
-       
-        <div class="row" style="padding-top:50px;">
-          <div class="col-8 col-sm-12 col-xl-8 my-auto">
-            <div class="d-flex d-sm-block d-md-flex align-items-center">
-              <h2 class="mb-0" style= "color:white;">Attendance</h2>
-              
-            </div>
-          </div>
-          <div class="col-4 col-sm-12 col-xl-4 text-center text-xl-right">
-            <i class="mdi mdi-account-check  text-success" style="font-size:70px;  "></i>
-          </div>
-        </div>
-      </div>
-    </a>
-    </div>
-  </div>
 
-  <div class="col-sm-6 grid-margin">
-    <div class="card" style="height: 280px">
-      <div class="card-body">
-      <a href="task1" style="text-decoration:none;">
-        
-        <div class="row" style="padding-top:50px;">
-          <div class="col-8 col-sm-12 col-xl-8 my-auto">
-            <div class="d-flex d-sm-block d-md-flex align-items-center">
-              <h2 class="mb-0" style= "color:white;">Task</h2>
-              
-            </div>
-           
+<div class="row" style="padding-top:20px;">
+              <div class="col-sm-6 grid-margin">
+                <div class="card" style="height: 280px">
+                <a href="Attendance" style="text-decoration:none;">
+                  <div class="card-body">
+                    {% comment %} <h5>Revenue</h5> {% endcomment %}
+                    <div class="row" style="padding-top:50px;">
+                      <div class="col-8 col-sm-12 col-xl-8 my-auto">
+                        <div class="d-flex d-sm-block d-md-flex align-items-center">
+                          <h2 class="mb-0" style="color:white;">Attendance </h2>
+                          {% comment %} <p class="text-success ms-2 mb-0 font-weight-medium">+3.5%</p> {% endcomment %}
+                        </div>
+                        {% comment %} <h6 class="text-muted font-weight-normal">11.38% Since last month</h6> {% endcomment %}
+                      </div>
+                      <div class="col-4 col-sm-12 col-xl-4 text-center text-xl-right">
+                        <i class="icon-lg mdi mdi-account-check  text-success ms-auto"></i>
+                      </div>
+                    </div>
+                  </div>
+                  </a>
+                </div>
+              </div>
+
+              <div class="col-sm-6 grid-margin">
+                <div class="card" style="height: 280px">
+                <a href="task1" style="text-decoration:none;">
+                  <div class="card-body">
+                    {% comment %} <h5>Revenue</h5> {% endcomment %}
+                    <div class="row" style="padding-top:50px;">
+                      <div class="col-8 col-sm-12 col-xl-8 my-auto">
+                        <div class="d-flex d-sm-block d-md-flex align-items-center">
+                          <h2 class="mb-0"  style="color:white;">Task </h2>
+                          {% comment %} <p class="text-success ms-2 mb-0 font-weight-medium">+3.5%</p> {% endcomment %}
+                        </div>
+                        {% comment %} <h6 class="text-muted font-weight-normal">11.38% Since last month</h6> {% endcomment %}
+                      </div>
+                      <div class="col-4 col-sm-12 col-xl-4 text-center text-xl-right">
+                        <i class="icon-lg mdi mdi-pencil-box-outline text-warning ms-auto"></i>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+                </div>
+              </div>
           </div>
-          <div class="col-4 col-sm-12 col-xl-4 text-center text-xl-right">
-            <i class="mdi mdi-pencil-box-outline text-warning" style="font-size:70px;  "></i>
-          </div>
-        </div>
-        </a>
-      </div>
-    </div>
-  </div>
-</div>
-</div>
-</div>
+
+
+
+
+
+
 {%endblock%}
-  

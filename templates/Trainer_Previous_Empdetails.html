@@ -3,20 +3,23 @@
 {% block content %}
 
 
+
+
 <div class="col-12 grid-margin">
     <div class="card" >
       <div class="card-body">
         <div class="row">
-        <div class="col-8 col-md-10 mt-3">
-     <h4 class="card-description"> Personal Information </h4>
-     </div>
-     <div class="col-4 col-md-2">
-     <img src="{% static 'assets/images/faces/face5.jpg' %}" class="img-fluid rounded-circle mb-3 " alt="image"  style="margin-right:20px">
-        </div>
-        </div>
-        
+          <div class="col-8 col-md-10 mt-3">
+       <h4 class="card-description"> Personal Information </h4>
+       </div>
+       <div class="col-4 col-md-2">
+       <img src="{% static 'assets/images/faces/face10.jpg' %}" class="img-fluid rounded-circle mb-3 " alt="image"  style="margin-right:20px">
+          </div>
+          </div>
+          <br><br>
         <form class="form-sample">
           <p class="card-description"> Personal details </p>
+          
           
           <div class="row">
             <div class="col-md-6">
@@ -67,11 +70,12 @@
                 <div class="form-group row">
                   <label class="col-sm-3 col-form-label">Trainer Name</label>
                   <div class="col-sm-9">
-                      <label class="col-sm-3 col-form-label">Amala</label>
+                      <label class="col-sm-3 col-form-label">Robin</label>
                   </div>
                 </div>
               </div>
             </div>
+            
             
           <br><br>
           <p class="card-description"> Address </p><br>
@@ -134,99 +138,78 @@
     </div>
   </div>
 
-
-    <div class="content-wrapper">
-                    <div class="page-header">
-                        <h3 class="page-title"> Chart </h3>
-                        
-                    </div>
-                    <div class="row">
-                    <div class="col-lg-6 grid-margin stretch-card">
-                        <div class="card">
-                        <div class="card-body">
-                            <h4 class="card-title">Pie chart</h4>
-                            <canvas id="pieChart" style="height:230px"></canvas>
-                        </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-6 grid-margin stretch-card">
-                        <div class="card">
-                        <div class="card-body">
-                            <h4 class="card-title">Bar chart</h4>
-                            <canvas id="barChart"  style="height:250px"></canvas>
-                        </div>
-                        </div>
-                    </div>
-                    </div>
+<!--Chart start-->
+  
+    <div class="page-header">
+        <h3 class="page-title"> Chart </h3>
+        
+    </div>
+    <div class="row">
+    <div class="col-lg-6 grid-margin stretch-card">
+        <div class="card">
+        <div class="card-body">
+            <h4 class="card-title">Pie chart</h4>
+            <canvas id="pieChart" style="height:250px"></canvas>
+        </div>
+        </div>
+    </div>
+    <div class="col-lg-6 grid-margin stretch-card">
+        <div class="card">
+        <div class="card-body">
+            <h4 class="card-title">Bar chart</h4>
+            <canvas id="barChart" style="height:230px"></canvas>
+        </div>
+        </div>
+    </div>
     </div>
 
 
+<!--End Chart Html-->
 
-        <div class="row"  style="padding-top:20px;">
-          <div class="col-sm-6 grid-margin">
-            <div class="card" style="height: 280px">
-            <a href="PAttendance" style="text-decoration: none;">
-              <div class="card-body">
-                
-                <div class="row" style="padding-top:50px;">
-                  <div class="col-8 col-sm-12 col-xl-8 my-auto">
-                    <div class="d-flex d-sm-block d-md-flex align-items-center">
-                      <h2 class="mb-0" style= "color:white;">Attendance</h2>
+<div class="row" style="padding-top:20px;">
+              <div class="col-sm-6 grid-margin">
+                <div class="card" style="height: 280px">
+                  <a href="PAttendance" style="text-decoration:none;">
+                    <div class="card-body">
                       
+                      <div class="row" style="padding-top:50px;">
+                        <div class="col-8 col-sm-12 col-xl-8 my-auto">
+                          <div class="d-flex d-sm-block d-md-flex align-items-center">
+                            <h3 class="mb-0" style="color:white;">Attendance </h>                          
+                          </div>                        
+                        </div>
+                        <div class="col-4 col-sm-12 col-xl-4 text-center text-xl-right">
+                          <i class="icon-lg mdi mdi-account-check  text-success ms-auto"></i>
+                        </div>
+                      </div>
                     </div>
-                    
-                  </div>
-                  <div class="col-4 col-sm-12 col-xl-4 text-center text-xl-right">
-                    <i class="mdi mdi-account-check  text-success" style="font-size:70px;  "></i>
-                  </div>
+                  </a>
                 </div>
               </div>
-            </a>
-            </div>
-          </div>
-      
-          <div class="col-sm-6 grid-margin">
-            <div class="card" style="height: 280px">
-              <div class="card-body">
-              <a href="Ptask1" style="text-decoration:none;">
-                
-                <div class="row" style="padding-top:50px;">
-                  <div class="col-8 col-sm-12 col-xl-8 my-auto">
-                    <div class="d-flex d-sm-block d-md-flex align-items-center">
-                      <h2 class="mb-0" style= "color:white;">Task</h2>
-                      
+
+              <div class="col-sm-6 grid-margin">
+                <div class="card" style="height: 280px">
+                <a href="Ptask1" style="text-decoration:none;">
+                  <div class="card-body">                    
+                    <div class="row" style="padding-top:50px;">
+                      <div class="col-8 col-sm-12 col-xl-8 my-auto">
+                        <div class="d-flex d-sm-block d-md-flex align-items-center">
+                          <h3 class="mb-0"  style="color:white;">Task </h3>                         
+                        </div>                        
+                      </div>
+                      <div class="col-4 col-sm-12 col-xl-4 text-center text-xl-right">
+                        <i class="icon-lg mdi mdi-pencil-box-outline text-warning ms-auto"></i>
+                      </div>
                     </div>
-                    
                   </div>
-                  <div class="col-4 col-sm-12 col-xl-4 text-center text-xl-right">
-                    <i class="mdi mdi-pencil-box-outline text-warning" style="font-size:70px;  "></i>
-                  </div>
-                </div>
                 </a>
+                </div>
               </div>
-            </div>
           </div>
-      </div>
-  
-    
-    
-      
-  <!-- content-wrapper ends -->
- 
-  <!-- partial -->
-</div>
-
-
-<!-- main-panel ends -->
-</div>
 
 
 
 
 
 
-
-
-
-{% endblock %}
-
+{%endblock%}
